@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Biografi Mahalini</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== STYLE DASAR ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff0f8, #ffe6f0);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(to right, #ff85c1, #ff66b2);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      box-shadow: 0 6px 20px rgba(255,182,193,0.4);
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    nav a, .dropbtn {
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover, .dropbtn:hover {
+      background-color: white;
+      color: #ff66b2;
+      box-shadow: 0 4px 10px rgba(255,105,180,0.3);
+    }
+
+    /* ===== DROPDOWN MENU ===== */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffb6d9;
+      border-radius: 10px;
+      min-width: 160px;
+      top: 45px;
+      left: 0;
+      box-shadow: 0 8px 20px rgba(255,182,193,0.4);
+      z-index: 999;
+    }
+
+    .dropdown-content a {
+      display: block;
+      color: white;
+      padding: 10px 15px;
+      text-align: left;
+      transition: 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ff66b2;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* ===== KONTEN ===== */
+    main {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .bio-container {
+      max-width: 900px;
+      background-color: white;
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 8px 25px rgba(255,182,193,0.3);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .bio-container h2 {
+      color: #ff5fa2;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+    }
+
+    .bio-container img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ff85c1;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(255,128,171,0.4);
+      transition: 0.3s;
+    }
+
+    .bio-container img:hover {
+      transform: scale(1.05);
+    }
+
+    .bio-container p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    /* ===== VIDEO SECTION ===== */
+    .video-section {
+      margin-top: 30px;
+    }
+
+    .video-section video {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(255,105,180,0.3);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: linear-gradient(to right, #ff85c1, #ff66b2);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      margin-top: 60px;
+      font-size: 0.95em;
+      box-shadow: 0 -6px 20px rgba(255,182,193,0.4);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .bio-container {
+        padding: 25px;
+      }
+
+      .bio-container img {
+        width: 200px;
+        height: 200px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+      }
+
+      .dropdown-content a {
+        color: #ff66b2;
+        padding: 8px 0;
+      }
+
+      .dropdown-content a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Biografi Mahalini</h1>
+    <nav>
+      <a href="index.html"> Beranda</a>
+
+      <div class="dropdown">
+        <a class="dropbtn" href="about.html"> Biografi</a>
+        <div class="dropdown-content">
+          <a href="karier html.html">Karier</a>
+          <a href="bakat seni.html">Bakat Seni</a>
+        </div>
+      </div>
+
+      <a href="MAHALINI HTML.html">Mahalini</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <div class="bio-container">
+      <h2>🌸 Tentang Mahalini Raharja</h2>
+
+      <!-- FOTO MAHALINI -->
+      <img src="c:\Users\HP\Downloads\00513960.webp" alt="Mahalini Raharja">
+
+      <!-- BIOGRAFI -->
+      <p><strong>Mahalini Raharja</strong>, atau lebih dikenal dengan nama panggung <strong>Mahalini</strong>, lahir di Denpasar, Bali pada 4 Maret 2000. Ia dikenal sebagai penyanyi dan penulis lagu berbakat yang memiliki suara lembut dan emosional.</p>
+      <p>Sebelum terkenal, Mahalini adalah mahasiswa Fakultas Kedokteran Gigi di Universitas Mahasaraswati Denpasar. Namun, cintanya terhadap musik membuatnya memutuskan fokus meniti karier di dunia hiburan.</p>
+      <p>Namanya mulai dikenal luas setelah menjadi finalis <em>Indonesian Idol</em> musim ke-10. Meskipun tidak menjadi juara, suara khas dan penampilannya yang memukau menjadikannya salah satu penyanyi muda paling berpengaruh di Indonesia.</p>
+      <p>Beberapa lagu hits-nya seperti <em>“Sisa Rasa”</em>, <em>“Melawan Restu”</em>, dan <em>“Sial”</em> menjadi favorit banyak orang karena liriknya yang menyentuh dan penghayatan yang kuat.</p>
+
+      <!-- VIDEO -->
+      <div class="video-section">
+        <video controls poster="https://upload.wikimedia.org/wikipedia/commons/2/26/Mahalini_Raharja_2023.png">
+          <source src="c:\Users\HP\Downloads\WhatsApp Video 2025-11-07 at 09.48.45.mp4" type="video/mp4">
+        
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; 2025 MEICHA | Dibuat dengan 💖 untuk penggemar Mahalini
+  </footer>
+
+</body>
+</html>

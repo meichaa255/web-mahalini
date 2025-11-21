@@ -1,0 +1,182 @@
+
+    
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album Musik Mahalini</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-color: #ff85c0;   /* Pink lembut */
+        --secondary-color: #ff4da6; /* Pink cerah */
+        --bg-gradient: linear-gradient(135deg, #ffe6f0, #fff0f5);
+        --card-bg: #fff0f5;
+        --shadow-color: rgba(255,77,166,0.3);
+    }
+
+    /* Reset & Global */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: var(--bg-gradient);
+        color: #333;
+        line-height: 1.6;
+    }
+    a { text-decoration: none; transition: all 0.3s ease; }
+    a:focus { outline: 2px solid var(--secondary-color); outline-offset: 2px; }
+
+    /* Header */
+    header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 4px 15px var(--shadow-color);
+        border-bottom: 3px solid #fff;
+    }
+    header h1 { font-size: 2em; margin-bottom: 12px; letter-spacing: 1px; }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+    nav a {
+        color: white;
+        font-weight: 500;
+        padding: 8px 20px;
+        border-radius: 50px;
+        background-color: rgba(255,255,255,0.2);
+        transition: all 0.3s ease;
+    }
+    nav a:hover {
+        background-color: rgba(255,255,255,0.35);
+        transform: scale(1.05);
+    }
+
+    /* Main Content */
+    main {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .album-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        width: 100%;
+    }
+    .album-card {
+        background-color: var(--card-bg);
+        border-radius: 20px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 5px 20px var(--shadow-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    }
+    .album-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 15px 35px var(--shadow-color);
+        filter: brightness(1.05);
+    }
+    .album-card img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 18px;
+        object-fit: cover;
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+    .album-card img:hover { transform: scale(1.05) rotate(1deg); filter: brightness(1.1); }
+    .album-card h3 { color: var(--secondary-color); margin-bottom: 12px; font-size: 1.3em; }
+    .album-card p { font-size: 0.95em; text-align: justify; color: #555; }
+
+    .album-card a.detail-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 22px;
+        border-radius: 50px;
+        background: var(--secondary-color);
+        color: #fff;
+        font-weight: 500;
+        box-shadow: 0 4px 12px var(--shadow-color);
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .album-card a.detail-btn:hover {
+        background: var(--primary-color);
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px var(--shadow-color);
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+        letter-spacing: 0.5px;
+        box-shadow: 0 -4px 15px var(--shadow-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        main { padding: 40px 15px; }
+        .album-card { padding: 20px; }
+    }
+    @media (max-width: 600px) {
+        header h1 { font-size: 1.6em; }
+        .album-card h3 { font-size: 1.2em; }
+        .album-card p { font-size: 0.9em; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>ALBUM MUSIK MAHALINI</h1>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Biografi</a>
+        <a href="MAHALINI HTML.html">Mahalini</a>
+    </nav>
+</header>
+
+<main>
+    <div class="album-grid">
+        <div class="album-card">
+            <img src="c:\Users\HP\Downloads\Mahalini-99.jpg" alt="Bawa Dia Kembali" loading="lazy">
+            <h3>Bawa Dia Kembali</h3>
+            <p>Liriknya menggambarkan perasaan kesepian dan kehampaan yang ditinggalkan oleh orang yang dicintai serta berisi permohonan agar orang tersebut bisa kembali, bahkan jika hanya sesaat.</p>
+            
+        </div>
+
+        <div class="album-card">
+            <img src="c:\Users\HP\Downloads\Peduli-Kondisi-Tanah-Kelahiran-Mahalini-Galang-Donasi-Korban-Banjir-Bali-168518109.webp" alt="Sisa Rasa" loading="lazy">
+            <h3>Sisa Rasa</h3>
+            <p>Liriknya memiliki makna tentang seseorang yang kehilangan orang yang sangat dicintai (ibunda Mahalini), namun masih menyimpan banyak kenangan dan perasaan cinta mendalam terhadap sosok tersebut meskipun telah pergi.</p>
+            
+        </div>
+
+        <div class="album-card">
+            <img src="c:\Users\HP\Downloads\mahalini-raharja-2_169.png" alt="Sial" loading="lazy">
+            <h3>Sial</h3>
+            <p>Lirik lagu ini bercerita tentang penyesalan mendalam, kekecewaan, dan rasa kesal karena pernah memberikan cinta pada orang yang salah, yang akhirnya pergi tanpa penjelasan.</p>
+            
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 MEICHA | Album Musik Mahalini
+</footer>
+
+</body>
+</html>

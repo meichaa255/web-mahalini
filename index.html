@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Mahalini Website</title>
+
+  <!-- Font & Icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========== GLOBAL STYLE ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fff9fc);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* ========== HEADER ========== */
+    header {
+      background: linear-gradient(to right, #ff99cc, #ff66b2);
+      color: white;
+      text-align: center;
+      padding: 50px 20px 30px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      box-shadow: 0 6px 20px rgba(255,182,193,0.4);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    /* ========== NAVBAR ========== */
+    nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #ff66b2;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(255,105,180,0.3);
+    }
+
+    /* ========== MAIN CONTENT ========== */
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: white;
+      border-radius: 25px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(255,182,193,0.3);
+    }
+
+    main img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 5px solid #ff80ab;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(255, 128, 171, 0.4);
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    main img:hover {
+      transform: scale(1.05);
+    }
+
+    main h2 {
+      color: #ff5fa2;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn-container {
+      margin-top: 30px;
+    }
+
+    .btn {
+      background: linear-gradient(to right, #ff99c8, #ff5fa2);
+      border: none;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255,105,180,0.3);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #ff6fa7, #ff99c8);
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: linear-gradient(to right, #ff99c8, #ff66b2);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      margin-top: 60px;
+      box-shadow: 0 -6px 20px rgba(255,182,193,0.4);
+    }
+
+    footer p {
+      font-size: 0.95em;
+      letter-spacing: 0.5px;
+    }
+
+    /* ========== RESPONSIVE DESIGN ========== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      main {
+        margin: 40px 20px;
+        padding: 25px;
+      }
+
+      main img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      nav a {
+        font-size: 0.9em;
+        padding: 8px 15px;
+      }
+
+      main h2 {
+        font-size: 1.4em;
+      }
+
+      main p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>WELCOME TO MAHALINI WEBSITE</h1>
+    <p>Tempat untuk mengenal dan mengagumi karya-karya Mahalini 💗</p>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Biografi</a>
+      <a href="MAHALINI HTML.html">Mahalini</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <img src="c:\Users\HP\Downloads\WhatsApp-Image-2023-05-25-at-08.40.50-1.jpeg" alt="Mahalini Raharja">
+    <h2>Hai, Linity! 👋</h2>
+    <p>Selamat datang di website penggemar <strong>Mahalini Raharja</strong>.</p>
+    <p>Kamu bisa menjelajahi kisah hidup, prestasi, dan karya musik terbaik Mahalini di sini.</p>
+    <p>Yuk, kenali lebih dalam sosok penyanyi berbakat yang selalu menebar cinta dan semangat! 💕</p>
+
+    <div class="btn-container">
+      <button class="btn" onclick="window.location.href='about.html'">📖 Lihat Biografi</button>
+      <button class="btn" onclick="window.location.href='MAHALINI HTML.html'">🎤 Album Musik</button>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 MEICHA | Dibuat dengan 💖 untuk penggemar Mahalini Raharja</p>
+  </footer>
+
+  <!-- ===== POP-UP WELCOME ===== -->
+  <script>
+    window.onload = function() {
+      setTimeout(() => {
+        alert("Selamat datang di website penggemar Mahalini! 💖");
+      }, 500);
+    };
+  </script>
+
+</body>
+</html>
